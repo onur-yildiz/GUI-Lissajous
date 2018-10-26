@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lissajous</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="title">
+  <p>Lissajous Curves</p>
+</div>
+
+<div id="wrapper">
+  <div id="main" data-width="512">
+    <canvas></canvas>
+  </div>
+  
+  <div id="controller">
+    <form>
+      <div class="row">
+        <label for="k">K</label>
+        <input id="k" type="number" value=".22">
+      </div>
+    
+      <div class="row">
+        <label for="k">Delta</label>
+        <input id="delta" type="number" value=".3">
+      </div>
+      
+      <div class="row">
+        <label for="k">Phi</label>
+        <input id="phi" type="number" value=".68">
+      </div>
+      
+      <div class="row">
+        <label for="k">Theta</label>
+        <input id="theta" type="number" value=".37">
+      </div>
+  
+      <button id="update" type="button" onclick="onUpdate()">Update</button>
+    </form>
+  
+    <div id="history"></div>
+  </div>
+
+</div>
+
+<script src='js/kgqaao.js'></script>
+<script  src="js/index.js"></script>
+
+</body>
+</html>

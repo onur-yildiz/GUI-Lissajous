@@ -1,0 +1,108 @@
+body {
+  background-color:lavender;
+}
+
+.title {
+  width: 100%;
+  font-weight: bolder;
+  font-size: 2em;
+  text-align: center;
+  color: rgb(38, 54, 54);
+}
+
+#wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 1em 0;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: flex-start;
+  width: 80%;
+}
+
+label {
+  font-weight: bolder;
+}
+
+button {
+  padding: .5em .75em;
+  background-color: white;
+  font-weight: bolder;
+}
+
+button:hover {
+  transition: .2s;
+  border-color: rgb(128, 226, 193);
+  background-color: whitesmoke
+}
+
+#main {
+  padding: 2em;
+  background-color: white;
+  border: 2px lightgrey groove;
+}
+
+canvas {
+  display: block;
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0) 49px, rgba(0, 0, 0, .1) 49px, rgba(0, 0, 0, .1) 50px), 
+  linear-gradient(90deg, rgba(0, 0, 0, 0) 49px, rgba(0, 0, 0, .1) 49px, rgba(0, 0, 0, .1) 50px);
+  background-size: 50px 50px, 50px 50px;
+  background-position: center center;
+}
+
+#controller {
+  width: 20em;
+  margin: 0 .1em;
+  display: flex;
+  flex-flow: row;
+  height: 100%;
+  position: relative;
+}
+
+#history {
+  position: absolute;
+  top: 105%;
+  min-width: 10em;
+  max-width: 20em;
+  height: 12em;
+  border: 1px lightgrey solid;
+  margin-top: 2em;
+  padding: .25em;
+  overflow: auto;
+  background-color: whitesmoke;
+  color: darkslategray;
+  font-weight: bolder;
+  word-wrap: none;
+  word-break: keep-all;
+  white-space: nowrap;
+}
+
+#history p {
+  margin: 0;
+}
+
+#history p:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.row input {
+  margin-bottom: 1em;
+  padding: .5em;
+  border: .1em aliceblue inset;
+}
+
+#controller input:focus {
+  background-color: whitesmoke;
+  border-color: aquamarine;
+}
